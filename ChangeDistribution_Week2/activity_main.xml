@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="145dp"
+        android:text="Price: "
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/price"
+        app:layout_constraintLeft_toRightOf="@+id/price" />
+
+    <TextView
+        android:id="@+id/twentycount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$20: "
+        app:layout_constraintRight_toRightOf="@id/price"
+        app:layout_constraintTop_toTopOf="@id/one" />
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="@id/total"
+        app:layout_constraintTop_toTopOf="@id/one" />
+
+    <TextView
+        android:id="@+id/tencount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:text="$10: "
+        app:layout_constraintLeft_toLeftOf="@id/twentycount"
+        app:layout_constraintTop_toBottomOf="@id/twentycount" />
+
+    <TextView
+        android:id="@+id/tenDcounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="@id/counter"
+        app:layout_constraintTop_toTopOf="@id/tencount" />
+
+    <TextView
+        android:id="@+id/fivecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$5: "
+        app:layout_constraintRight_toRightOf="@id/price"
+        app:layout_constraintTop_toBottomOf="@id/tencount" />
+
+    <TextView
+        android:id="@+id/fiveDcounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintRight_toRightOf="@id/counter"
+        app:layout_constraintTop_toTopOf="@id/fivecount" />
+
+    <TextView
+        android:id="@+id/onecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$1: "
+        app:layout_constraintLeft_toLeftOf="@id/fivecount"
+        app:layout_constraintTop_toBottomOf="@id/fivecount" />
+
+    <TextView
+        android:id="@+id/oneDcounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintRight_toRightOf="@id/counter"
+        app:layout_constraintTop_toTopOf="@id/onecount" />
+
+    <TextView
+        android:id="@+id/twentyfivecentcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.25: "
+        app:layout_constraintRight_toRightOf="@id/price"
+        app:layout_constraintTop_toBottomOf="@id/onecount" />
+
+    <TextView
+        android:id="@+id/twentyfiveCcounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="@id/total"
+        app:layout_constraintTop_toTopOf="@id/twentyfivecentcount" />
+
+    <TextView
+        android:id="@+id/tencentcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.1: "
+        app:layout_constraintRight_toRightOf="@id/price"
+        app:layout_constraintTop_toBottomOf="@id/twentyfivecentcount" />
+
+    <TextView
+        android:id="@+id/tenCcounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="@id/total"
+        app:layout_constraintTop_toTopOf="@id/tencentcount" />
+
+    <TextView
+        android:id="@+id/fivecentcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.05: "
+        app:layout_constraintRight_toRightOf="@id/price"
+        app:layout_constraintTop_toBottomOf="@id/tencentcount" />
+
+    <TextView
+        android:id="@+id/fiveCcounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="@id/total"
+        app:layout_constraintTop_toTopOf="@id/fivecentcount" />
+
+    <TextView
+        android:id="@+id/onecentcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.01: "
+        app:layout_constraintRight_toRightOf="@id/price"
+        app:layout_constraintTop_toBottomOf="@id/fivecentcount" />
+
+    <TextView
+        android:id="@+id/oneCcounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintLeft_toLeftOf="@id/total"
+        app:layout_constraintTop_toTopOf="@id/onecentcount" />
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="numPad"
+        android:text="@string/buttonOne"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="116dp"
+        android:text="@string/buttonTwo"
+        android:onClick="numPad"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/one"
+        app:layout_constraintBottom_toBottomOf="@+id/one" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/buttonThree"
+        android:onClick="numPad"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/two"
+        app:layout_constraintBottom_toBottomOf="@+id/one" />
+
+    <Button
+        android:id="@+id/four"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/buttonFour"
+        android:onClick="numPad"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        app:layout_constraintRight_toRightOf="@+id/one"
+        />
+
+    <Button
+        android:id="@+id/five"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/buttonFive"
+        android:onClick="numPad"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/four"
+        app:layout_constraintBottom_toBottomOf="@+id/four" />
+
+    <Button
+        android:id="@+id/six"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/buttonSix"
+        android:onClick="numPad"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/five"
+        app:layout_constraintBottom_toBottomOf="@+id/four" />
+
+    <Button
+        android:id="@+id/seven"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/buttonSeven"
+        android:onClick="numPad"
+        app:layout_constraintTop_toBottomOf="@+id/four"
+        app:layout_constraintRight_toRightOf="@+id/four"
+        />
+
+    <Button
+        android:id="@+id/eight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/buttonEight"
+        android:onClick="numPad"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/seven"
+        app:layout_constraintBottom_toBottomOf="@+id/seven" />
+
+    <Button
+        android:id="@+id/nine"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/buttonNine"
+        android:onClick="numPad"
+        android:layout_marginStart="15dp"
+        app:layout_constraintLeft_toRightOf="@+id/eight"
+        app:layout_constraintBottom_toBottomOf="@+id/eight" />
+
+    <Button
+        android:id="@+id/zero"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="@string/buttonZero"
+        android:onClick="numPad"
+        app:layout_constraintRight_toRightOf="@id/seven"
+        app:layout_constraintTop_toBottomOf="@id/seven" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/buttonClear"
+        android:onClick="clearButton"
+        android:layout_marginStart="15dp"
+        app:layout_constraintTop_toTopOf="@id/zero"
+        app:layout_constraintLeft_toRightOf="@id/zero"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

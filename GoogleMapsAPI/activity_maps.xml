@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:map="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity"
+        />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/searchLocation"
+        android:queryHint="Search"
+        android:background="@color/cardview_light_background" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"/>
+
+    <TextView
+        android:id="@+id/mMapTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Map Text"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="40dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/CameraIdle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera Idle Text"
+        android:textSize="20sp"
+        android:layout_above="@+id/mMapTextView"
+        android:layout_centerInParent="true"/>
+
+
+</RelativeLayout>
